@@ -1,0 +1,12 @@
+<h2>
+  <%= @blog_post.title %>
+</h2>
+<h3>
+  <%= @blog_post.body %>
+</h3>
+<h3>
+  <%= button_to "Edit", edit_blog_post_path(@blog_post), method: :get, class: "btn btn-primary" %>
+</h3>
+<h3>
+  back to <%= link_to "all posts", root_path %>
+</h3>
